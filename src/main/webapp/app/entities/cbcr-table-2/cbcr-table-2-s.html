@@ -1,0 +1,103 @@
+<div>
+    <h2 translate="tieEntityApp.cbcrTable2.home.title">Cbcr Table 2 S</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="cbcr-table-2.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span class="hidden-xs"  translate="tieEntityApp.cbcrTable2.home.createLabel">
+                        Create new Cbcr Table 2
+                    </span>
+                </button>
+            </div>
+            <div class="col-xs-8 no-padding-right">
+                <form name="searchForm" class="form-inline">
+                    <div class="input-group pull-right" >
+                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="{{ 'tieEntityApp.cbcrTable2.home.search' | translate }}">
+                        <span  class="input-group-btn width-min" >
+                            <button class="btn btn-info" ng-click="vm.search(vm.searchQuery)">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                        <span class="input-group-btn width-min" ng-if="vm.currentSearch">
+                            <button class="btn btn-info" ng-click="vm.clear()">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.entityCode">Entity Code</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.taxJurisdiction">Tax Jurisdiction</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.taxJurisOfIncorporation">Tax Juris Of Incorporation</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusRAndD">Main Bus R And D</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusHoldingIp">Main Bus Holding Ip</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusPurchasing">Main Bus Purchasing</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusSalesMktDistr">Main Bus Sales Mkt Distr</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusAdminMgmtSupportSvc">Main Bus Admin Mgmt Support Svc</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusProvSvcToUnrelatedParties">Main Bus Prov Svc To Unrelated Parties</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusInternalGroupFinance">Main Bus Internal Group Finance</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusRegulatedFinSvc">Main Bus Regulated Fin Svc</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusInsurance">Main Bus Insurance</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusHoldingEquityInstruments">Main Bus Holding Equity Instruments</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusDormant">Main Bus Dormant</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusOther">Main Bus Other</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable2.mainBusOtherNotes">Main Bus Other Notes</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="cbcrTable2 in vm.cbcrTable2S track by cbcrTable2.id">
+                    <td><a ui-sref="cbcr-table-2-detail({id:cbcrTable2.id})">{{cbcrTable2.id}}</a></td>
+                    <td>{{cbcrTable2.entityCode}}</td>
+                    <td>{{cbcrTable2.taxJurisdiction}}</td>
+                    <td>{{cbcrTable2.taxJurisOfIncorporation}}</td>
+                    <td>{{cbcrTable2.mainBusRAndD}}</td>
+                    <td>{{cbcrTable2.mainBusHoldingIp}}</td>
+                    <td>{{cbcrTable2.mainBusPurchasing}}</td>
+                    <td>{{cbcrTable2.mainBusSalesMktDistr}}</td>
+                    <td>{{cbcrTable2.mainBusAdminMgmtSupportSvc}}</td>
+                    <td>{{cbcrTable2.mainBusProvSvcToUnrelatedParties}}</td>
+                    <td>{{cbcrTable2.mainBusInternalGroupFinance}}</td>
+                    <td>{{cbcrTable2.mainBusRegulatedFinSvc}}</td>
+                    <td>{{cbcrTable2.mainBusInsurance}}</td>
+                    <td>{{cbcrTable2.mainBusHoldingEquityInstruments}}</td>
+                    <td>{{cbcrTable2.mainBusDormant}}</td>
+                    <td>{{cbcrTable2.mainBusOther}}</td>
+                    <td>{{cbcrTable2.mainBusOtherNotes}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="cbcr-table-2-detail({id:cbcrTable2.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="cbcr-table-2.edit({id:cbcrTable2.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="cbcr-table-2.delete({id:cbcrTable2.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

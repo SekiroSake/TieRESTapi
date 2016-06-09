@@ -7,6 +7,7 @@
     <include file="classpath:config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160609163051_added_entity_CbcrEntity.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160609172440_added_entity_CbcrTable1.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160609173907_added_entity_CbcrTable2.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

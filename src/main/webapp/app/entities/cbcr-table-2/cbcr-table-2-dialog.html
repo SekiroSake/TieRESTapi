@@ -1,0 +1,122 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myCbcrTable2Label" translate="tieEntityApp.cbcrTable2.home.createOrEditLabel">Create or edit a Cbcr Table 2</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.cbcrTable2.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.cbcrTable2.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.entityCode" for="field_entityCode">Entity Code</label>
+            <input type="text" class="form-control" name="entityCode" id="field_entityCode"
+                    ng-model="vm.cbcrTable2.entityCode"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.taxJurisdiction" for="field_taxJurisdiction">Tax Jurisdiction</label>
+            <input type="text" class="form-control" name="taxJurisdiction" id="field_taxJurisdiction"
+                    ng-model="vm.cbcrTable2.taxJurisdiction"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.taxJurisOfIncorporation" for="field_taxJurisOfIncorporation">Tax Juris Of Incorporation</label>
+            <input type="text" class="form-control" name="taxJurisOfIncorporation" id="field_taxJurisOfIncorporation"
+                    ng-model="vm.cbcrTable2.taxJurisOfIncorporation"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusRAndD" for="field_mainBusRAndD">Main Bus R And D</label>
+            <input type="number" class="form-control" name="mainBusRAndD" id="field_mainBusRAndD"
+                    ng-model="vm.cbcrTable2.mainBusRAndD"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusHoldingIp" for="field_mainBusHoldingIp">Main Bus Holding Ip</label>
+            <input type="number" class="form-control" name="mainBusHoldingIp" id="field_mainBusHoldingIp"
+                    ng-model="vm.cbcrTable2.mainBusHoldingIp"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusPurchasing" for="field_mainBusPurchasing">Main Bus Purchasing</label>
+            <input type="number" class="form-control" name="mainBusPurchasing" id="field_mainBusPurchasing"
+                    ng-model="vm.cbcrTable2.mainBusPurchasing"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusSalesMktDistr" for="field_mainBusSalesMktDistr">Main Bus Sales Mkt Distr</label>
+            <input type="number" class="form-control" name="mainBusSalesMktDistr" id="field_mainBusSalesMktDistr"
+                    ng-model="vm.cbcrTable2.mainBusSalesMktDistr"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusAdminMgmtSupportSvc" for="field_mainBusAdminMgmtSupportSvc">Main Bus Admin Mgmt Support Svc</label>
+            <input type="number" class="form-control" name="mainBusAdminMgmtSupportSvc" id="field_mainBusAdminMgmtSupportSvc"
+                    ng-model="vm.cbcrTable2.mainBusAdminMgmtSupportSvc"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusProvSvcToUnrelatedParties" for="field_mainBusProvSvcToUnrelatedParties">Main Bus Prov Svc To Unrelated Parties</label>
+            <input type="number" class="form-control" name="mainBusProvSvcToUnrelatedParties" id="field_mainBusProvSvcToUnrelatedParties"
+                    ng-model="vm.cbcrTable2.mainBusProvSvcToUnrelatedParties"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusInternalGroupFinance" for="field_mainBusInternalGroupFinance">Main Bus Internal Group Finance</label>
+            <input type="number" class="form-control" name="mainBusInternalGroupFinance" id="field_mainBusInternalGroupFinance"
+                    ng-model="vm.cbcrTable2.mainBusInternalGroupFinance"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusRegulatedFinSvc" for="field_mainBusRegulatedFinSvc">Main Bus Regulated Fin Svc</label>
+            <input type="number" class="form-control" name="mainBusRegulatedFinSvc" id="field_mainBusRegulatedFinSvc"
+                    ng-model="vm.cbcrTable2.mainBusRegulatedFinSvc"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusInsurance" for="field_mainBusInsurance">Main Bus Insurance</label>
+            <input type="number" class="form-control" name="mainBusInsurance" id="field_mainBusInsurance"
+                    ng-model="vm.cbcrTable2.mainBusInsurance"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusHoldingEquityInstruments" for="field_mainBusHoldingEquityInstruments">Main Bus Holding Equity Instruments</label>
+            <input type="number" class="form-control" name="mainBusHoldingEquityInstruments" id="field_mainBusHoldingEquityInstruments"
+                    ng-model="vm.cbcrTable2.mainBusHoldingEquityInstruments"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusDormant" for="field_mainBusDormant">Main Bus Dormant</label>
+            <input type="number" class="form-control" name="mainBusDormant" id="field_mainBusDormant"
+                    ng-model="vm.cbcrTable2.mainBusDormant"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusOther" for="field_mainBusOther">Main Bus Other</label>
+            <input type="number" class="form-control" name="mainBusOther" id="field_mainBusOther"
+                    ng-model="vm.cbcrTable2.mainBusOther"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable2.mainBusOtherNotes" for="field_mainBusOtherNotes">Main Bus Other Notes</label>
+            <input type="text" class="form-control" name="mainBusOtherNotes" id="field_mainBusOtherNotes"
+                    ng-model="vm.cbcrTable2.mainBusOtherNotes"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

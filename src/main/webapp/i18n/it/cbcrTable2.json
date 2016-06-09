@@ -1,0 +1,38 @@
+{
+    "tieEntityApp": {
+        "cbcrTable2" : {
+            "home": {
+                "title": "CbcrTable2S",
+                "createLabel": "Create a new Cbcr Table 2",
+                "createOrEditLabel": "Create or edit a Cbcr Table 2",
+                "search": "Search for Cbcr Table 2"
+            },
+            "created": "A new Cbcr Table 2 is created with identifier {{ param }}",
+            "updated": "A Cbcr Table 2 is updated with identifier {{ param }}",
+            "deleted": "A Cbcr Table 2 is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Cbcr Table 2 {{ id }}?"
+            },
+            "detail": {
+                "title": "Cbcr Table 2"
+            },
+            "entityCode": "Entity Code",
+            "taxJurisdiction": "Tax Jurisdiction",
+            "taxJurisOfIncorporation": "Tax Juris Of Incorporation",
+            "mainBusRAndD": "Main Bus R And D",
+            "mainBusHoldingIp": "Main Bus Holding Ip",
+            "mainBusPurchasing": "Main Bus Purchasing",
+            "mainBusSalesMktDistr": "Main Bus Sales Mkt Distr",
+            "mainBusAdminMgmtSupportSvc": "Main Bus Admin Mgmt Support Svc",
+            "mainBusProvSvcToUnrelatedParties": "Main Bus Prov Svc To Unrelated Parties",
+            "mainBusInternalGroupFinance": "Main Bus Internal Group Finance",
+            "mainBusRegulatedFinSvc": "Main Bus Regulated Fin Svc",
+            "mainBusInsurance": "Main Bus Insurance",
+            "mainBusHoldingEquityInstruments": "Main Bus Holding Equity Instruments",
+            "mainBusDormant": "Main Bus Dormant",
+            "mainBusOther": "Main Bus Other",
+            "mainBusOtherNotes": "Main Bus Other Notes",
+            "tieDoc": "Tie Doc"
+        }
+    }
+}

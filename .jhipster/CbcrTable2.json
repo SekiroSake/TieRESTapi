@@ -1,0 +1,83 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "tieDoc",
+            "otherEntityName": "tieDoc",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "cbcrTable2"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "entityCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "taxJurisdiction",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "taxJurisOfIncorporation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mainBusRAndD",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusHoldingIp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusPurchasing",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusSalesMktDistr",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusAdminMgmtSupportSvc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusProvSvcToUnrelatedParties",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusInternalGroupFinance",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusRegulatedFinSvc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusInsurance",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusHoldingEquityInstruments",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusDormant",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusOther",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mainBusOtherNotes",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        }
+    ],
+    "changelogDate": "20160609173907",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "cbcr_table_2",
+    "pagination": "no"
+}
