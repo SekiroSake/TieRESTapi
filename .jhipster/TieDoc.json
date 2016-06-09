@@ -1,0 +1,76 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "cbcrEntity",
+            "otherEntityName": "cbcrEntity",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "tieDoc"
+        },
+        {
+            "relationshipName": "cbcrTable1",
+            "otherEntityName": "cbcrTable1",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "tieDoc"
+        },
+        {
+            "relationshipName": "cbcrTable2",
+            "otherEntityName": "cbcrTable2",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "tieDoc"
+        },
+        {
+            "relationshipName": "cbcrTable3",
+            "otherEntityName": "cbcrTable3",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "tieDoc"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "80"
+        },
+        {
+            "fieldName": "code",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "80"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "reportingEntityCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currencyCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "resCountryCode",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160609161447",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "tie_doc",
+    "pagination": "no"
+}

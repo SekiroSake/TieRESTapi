@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <!--
+        Added the constraints for entity TieDoc.
+    -->
+    <changeSet id="20160609161447-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="cbcr_entity_id"
+                                 baseTableName="tie_doc"
+                                 constraintName="fk_tiedoc_cbcrentity_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cbcr_entity"/>
+
+        <addForeignKeyConstraint baseColumnNames="cbcr_table_1_id"
+                                 baseTableName="tie_doc"
+                                 constraintName="fk_tiedoc_cbcrtable_1_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cbcr_table_1"/>
+
+        <addForeignKeyConstraint baseColumnNames="cbcr_table_2_id"
+                                 baseTableName="tie_doc"
+                                 constraintName="fk_tiedoc_cbcrtable_2_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cbcr_table_2"/>
+
+        <addForeignKeyConstraint baseColumnNames="cbcr_table_3_id"
+                                 baseTableName="tie_doc"
+                                 constraintName="fk_tiedoc_cbcrtable_3_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cbcr_table_3"/>
+
+    </changeSet>
+</databaseChangeLog>

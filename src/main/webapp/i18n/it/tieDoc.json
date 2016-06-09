@@ -1,0 +1,31 @@
+{
+    "tieEntityApp": {
+        "tieDoc" : {
+            "home": {
+                "title": "TieDocs",
+                "createLabel": "Create a new Tie Doc",
+                "createOrEditLabel": "Create or edit a Tie Doc",
+                "search": "Search for Tie Doc"
+            },
+            "created": "A new Tie Doc is created with identifier {{ param }}",
+            "updated": "A Tie Doc is updated with identifier {{ param }}",
+            "deleted": "A Tie Doc is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Tie Doc {{ id }}?"
+            },
+            "detail": {
+                "title": "Tie Doc"
+            },
+            "name": "Name",
+            "code": "Code",
+            "description": "Description",
+            "reportingEntityCode": "Reporting Entity Code",
+            "currencyCode": "Currency Code",
+            "resCountryCode": "Res Country Code",
+            "cbcrEntity": "Cbcr Entity",
+            "cbcrTable1": "Cbcr Table 1",
+            "cbcrTable2": "Cbcr Table 2",
+            "cbcrTable3": "Cbcr Table 3"
+        }
+    }
+}

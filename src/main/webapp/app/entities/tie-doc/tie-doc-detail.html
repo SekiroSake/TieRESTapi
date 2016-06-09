@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="tieEntityApp.tieDoc.detail.title">Tie Doc</span> {{vm.tieDoc.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="tieEntityApp.tieDoc.name">Name</span></dt>
+        <dd>
+            <span>{{vm.tieDoc.name}}</span>
+        </dd>
+        <dt><span translate="tieEntityApp.tieDoc.code">Code</span></dt>
+        <dd>
+            <span>{{vm.tieDoc.code}}</span>
+        </dd>
+        <dt><span translate="tieEntityApp.tieDoc.description">Description</span></dt>
+        <dd>
+            <span>{{vm.tieDoc.description}}</span>
+        </dd>
+        <dt><span translate="tieEntityApp.tieDoc.reportingEntityCode">Reporting Entity Code</span></dt>
+        <dd>
+            <span>{{vm.tieDoc.reportingEntityCode}}</span>
+        </dd>
+        <dt><span translate="tieEntityApp.tieDoc.currencyCode">Currency Code</span></dt>
+        <dd>
+            <span>{{vm.tieDoc.currencyCode}}</span>
+        </dd>
+        <dt><span translate="tieEntityApp.tieDoc.resCountryCode">Res Country Code</span></dt>
+        <dd>
+            <span>{{vm.tieDoc.resCountryCode}}</span>
+        </dd>
+        <dt><span translate="tieEntityApp.tieDoc.cbcrEntity">Cbcr Entity</span></dt>
+        <dd>
+            <a ui-sref="cbcr-entity-detail({id:vm.tieDoc.cbcrEntity.id})">{{vm.tieDoc.cbcrEntity.id}}</a>
+        </dd>
+        <dt><span translate="tieEntityApp.tieDoc.cbcrTable1">Cbcr Table 1</span></dt>
+        <dd>
+            <a ui-sref="cbcr-table-1-detail({id:vm.tieDoc.cbcrTable1.id})">{{vm.tieDoc.cbcrTable1.id}}</a>
+        </dd>
+        <dt><span translate="tieEntityApp.tieDoc.cbcrTable2">Cbcr Table 2</span></dt>
+        <dd>
+            <a ui-sref="cbcr-table-2-detail({id:vm.tieDoc.cbcrTable2.id})">{{vm.tieDoc.cbcrTable2.id}}</a>
+        </dd>
+        <dt><span translate="tieEntityApp.tieDoc.cbcrTable3">Cbcr Table 3</span></dt>
+        <dd>
+            <a ui-sref="cbcr-table-3-detail({id:vm.tieDoc.cbcrTable3.id})">{{vm.tieDoc.cbcrTable3.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

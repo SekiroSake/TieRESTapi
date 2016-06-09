@@ -1,0 +1,98 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myTieDocLabel" translate="tieEntityApp.tieDoc.home.createOrEditLabel">Create or edit a Tie Doc</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.tieDoc.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.tieDoc.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.tieDoc.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="vm.tieDoc.name"
+                    ng-maxlength="80" />
+            <div ng-show="editForm.name.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.name.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="80">
+                    This field cannot be longer than 80 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.tieDoc.code" for="field_code">Code</label>
+            <input type="text" class="form-control" name="code" id="field_code"
+                    ng-model="vm.tieDoc.code"
+                    ng-maxlength="80" />
+            <div ng-show="editForm.code.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.code.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="80">
+                    This field cannot be longer than 80 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.tieDoc.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="vm.tieDoc.description"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.tieDoc.reportingEntityCode" for="field_reportingEntityCode">Reporting Entity Code</label>
+            <input type="text" class="form-control" name="reportingEntityCode" id="field_reportingEntityCode"
+                    ng-model="vm.tieDoc.reportingEntityCode"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.tieDoc.currencyCode" for="field_currencyCode">Currency Code</label>
+            <input type="text" class="form-control" name="currencyCode" id="field_currencyCode"
+                    ng-model="vm.tieDoc.currencyCode"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.tieDoc.resCountryCode" for="field_resCountryCode">Res Country Code</label>
+            <input type="text" class="form-control" name="resCountryCode" id="field_resCountryCode"
+                    ng-model="vm.tieDoc.resCountryCode"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="tieEntityApp.tieDoc.cbcrEntity" for="field_cbcrEntity">Cbcr Entity</label>
+            <select class="form-control" id="field_cbcrEntity" name="cbcrEntity" ng-model="vm.tieDoc.cbcrEntity" ng-options="cbcrEntity as cbcrEntity.id for cbcrEntity in vm.cbcrentities | orderBy:'id' track by cbcrEntity.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="tieEntityApp.tieDoc.cbcrTable1" for="field_cbcrTable1">Cbcr Table 1</label>
+            <select class="form-control" id="field_cbcrTable1" name="cbcrTable1" ng-model="vm.tieDoc.cbcrTable1" ng-options="cbcrTable1 as cbcrTable1.id for cbcrTable1 in vm.cbcrtable1s | orderBy:'id' track by cbcrTable1.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="tieEntityApp.tieDoc.cbcrTable2" for="field_cbcrTable2">Cbcr Table 2</label>
+            <select class="form-control" id="field_cbcrTable2" name="cbcrTable2" ng-model="vm.tieDoc.cbcrTable2" ng-options="cbcrTable2 as cbcrTable2.id for cbcrTable2 in vm.cbcrtable2s | orderBy:'id' track by cbcrTable2.id">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="tieEntityApp.tieDoc.cbcrTable3" for="field_cbcrTable3">Cbcr Table 3</label>
+            <select class="form-control" id="field_cbcrTable3" name="cbcrTable3" ng-model="vm.tieDoc.cbcrTable3" ng-options="cbcrTable3 as cbcrTable3.id for cbcrTable3 in vm.cbcrtable3s | orderBy:'id' track by cbcrTable3.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
