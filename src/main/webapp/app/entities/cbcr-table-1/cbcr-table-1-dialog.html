@@ -1,0 +1,92 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myCbcrTable1Label" translate="tieEntityApp.cbcrTable1.home.createOrEditLabel">Create or edit a Cbcr Table 1</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.cbcrTable1.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.cbcrTable1.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.taxJurisdiction" for="field_taxJurisdiction">Tax Jurisdiction</label>
+            <input type="text" class="form-control" name="taxJurisdiction" id="field_taxJurisdiction"
+                    ng-model="vm.cbcrTable1.taxJurisdiction"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.revenueUnrelatedParty" for="field_revenueUnrelatedParty">Revenue Unrelated Party</label>
+            <input type="number" class="form-control" name="revenueUnrelatedParty" id="field_revenueUnrelatedParty"
+                    ng-model="vm.cbcrTable1.revenueUnrelatedParty"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.revenueRelatedParty" for="field_revenueRelatedParty">Revenue Related Party</label>
+            <input type="number" class="form-control" name="revenueRelatedParty" id="field_revenueRelatedParty"
+                    ng-model="vm.cbcrTable1.revenueRelatedParty"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.revenueTotal" for="field_revenueTotal">Revenue Total</label>
+            <input type="number" class="form-control" name="revenueTotal" id="field_revenueTotal"
+                    ng-model="vm.cbcrTable1.revenueTotal"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.plBeforeIncomeTax" for="field_plBeforeIncomeTax">Pl Before Income Tax</label>
+            <input type="number" class="form-control" name="plBeforeIncomeTax" id="field_plBeforeIncomeTax"
+                    ng-model="vm.cbcrTable1.plBeforeIncomeTax"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.incomeTaxPaid" for="field_incomeTaxPaid">Income Tax Paid</label>
+            <input type="number" class="form-control" name="incomeTaxPaid" id="field_incomeTaxPaid"
+                    ng-model="vm.cbcrTable1.incomeTaxPaid"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.incomeTaxAccrued" for="field_incomeTaxAccrued">Income Tax Accrued</label>
+            <input type="number" class="form-control" name="incomeTaxAccrued" id="field_incomeTaxAccrued"
+                    ng-model="vm.cbcrTable1.incomeTaxAccrued"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.statedCapital" for="field_statedCapital">Stated Capital</label>
+            <input type="number" class="form-control" name="statedCapital" id="field_statedCapital"
+                    ng-model="vm.cbcrTable1.statedCapital"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.accumulatedEarnings" for="field_accumulatedEarnings">Accumulated Earnings</label>
+            <input type="number" class="form-control" name="accumulatedEarnings" id="field_accumulatedEarnings"
+                    ng-model="vm.cbcrTable1.accumulatedEarnings"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.numberOfEmployees" for="field_numberOfEmployees">Number Of Employees</label>
+            <input type="number" class="form-control" name="numberOfEmployees" id="field_numberOfEmployees"
+                    ng-model="vm.cbcrTable1.numberOfEmployees"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrTable1.tangibleAssetsNonCash" for="field_tangibleAssetsNonCash">Tangible Assets Non Cash</label>
+            <input type="number" class="form-control" name="tangibleAssetsNonCash" id="field_tangibleAssetsNonCash"
+                    ng-model="vm.cbcrTable1.tangibleAssetsNonCash"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,93 @@
+<div>
+    <h2 translate="tieEntityApp.cbcrTable1.home.title">Cbcr Table 1 S</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="cbcr-table-1.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span class="hidden-xs"  translate="tieEntityApp.cbcrTable1.home.createLabel">
+                        Create new Cbcr Table 1
+                    </span>
+                </button>
+            </div>
+            <div class="col-xs-8 no-padding-right">
+                <form name="searchForm" class="form-inline">
+                    <div class="input-group pull-right" >
+                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="{{ 'tieEntityApp.cbcrTable1.home.search' | translate }}">
+                        <span  class="input-group-btn width-min" >
+                            <button class="btn btn-info" ng-click="vm.search(vm.searchQuery)">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                        <span class="input-group-btn width-min" ng-if="vm.currentSearch">
+                            <button class="btn btn-info" ng-click="vm.clear()">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.taxJurisdiction">Tax Jurisdiction</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.revenueUnrelatedParty">Revenue Unrelated Party</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.revenueRelatedParty">Revenue Related Party</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.revenueTotal">Revenue Total</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.plBeforeIncomeTax">Pl Before Income Tax</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.incomeTaxPaid">Income Tax Paid</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.incomeTaxAccrued">Income Tax Accrued</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.statedCapital">Stated Capital</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.accumulatedEarnings">Accumulated Earnings</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.numberOfEmployees">Number Of Employees</span></th>
+                    <th><span translate="tieEntityApp.cbcrTable1.tangibleAssetsNonCash">Tangible Assets Non Cash</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="cbcrTable1 in vm.cbcrTable1S track by cbcrTable1.id">
+                    <td><a ui-sref="cbcr-table-1-detail({id:cbcrTable1.id})">{{cbcrTable1.id}}</a></td>
+                    <td>{{cbcrTable1.taxJurisdiction}}</td>
+                    <td>{{cbcrTable1.revenueUnrelatedParty}}</td>
+                    <td>{{cbcrTable1.revenueRelatedParty}}</td>
+                    <td>{{cbcrTable1.revenueTotal}}</td>
+                    <td>{{cbcrTable1.plBeforeIncomeTax}}</td>
+                    <td>{{cbcrTable1.incomeTaxPaid}}</td>
+                    <td>{{cbcrTable1.incomeTaxAccrued}}</td>
+                    <td>{{cbcrTable1.statedCapital}}</td>
+                    <td>{{cbcrTable1.accumulatedEarnings}}</td>
+                    <td>{{cbcrTable1.numberOfEmployees}}</td>
+                    <td>{{cbcrTable1.tangibleAssetsNonCash}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="cbcr-table-1-detail({id:cbcrTable1.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="cbcr-table-1.edit({id:cbcrTable1.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="cbcr-table-1.delete({id:cbcrTable1.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

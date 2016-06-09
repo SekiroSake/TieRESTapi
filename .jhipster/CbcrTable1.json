@@ -1,0 +1,63 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "tieDoc",
+            "otherEntityName": "tieDoc",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "cbcrTable1"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "taxJurisdiction",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "revenueUnrelatedParty",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "revenueRelatedParty",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "revenueTotal",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "plBeforeIncomeTax",
+            "fieldType": "BigDecimal",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "incomeTaxPaid",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "incomeTaxAccrued",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "statedCapital",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "accumulatedEarnings",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "numberOfEmployees",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "tangibleAssetsNonCash",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "changelogDate": "20160609172440",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "cbcr_table_1",
+    "pagination": "no"
+}

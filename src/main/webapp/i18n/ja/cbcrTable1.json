@@ -1,0 +1,33 @@
+{
+    "tieEntityApp": {
+        "cbcrTable1" : {
+            "home": {
+                "title": "CbcrTable1S",
+                "createLabel": "Cbcr Table 1 を追加",
+                "createOrEditLabel": "Cbcr Table 1を追加または編集",
+                "search": "Search for Cbcr Table 1"
+            },
+            "created": "A new Cbcr Table 1 is created with identifier {{ param }}",
+            "updated": "A Cbcr Table 1 is updated with identifier {{ param }}",
+            "deleted": "A Cbcr Table 1 is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Cbcr Table 1 {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Cbcr Table 1"
+            },
+            "taxJurisdiction": "Tax Jurisdiction",
+            "revenueUnrelatedParty": "Revenue Unrelated Party",
+            "revenueRelatedParty": "Revenue Related Party",
+            "revenueTotal": "Revenue Total",
+            "plBeforeIncomeTax": "Pl Before Income Tax",
+            "incomeTaxPaid": "Income Tax Paid",
+            "incomeTaxAccrued": "Income Tax Accrued",
+            "statedCapital": "Stated Capital",
+            "accumulatedEarnings": "Accumulated Earnings",
+            "numberOfEmployees": "Number Of Employees",
+            "tangibleAssetsNonCash": "Tangible Assets Non Cash",
+            "tieDoc": "Tie Doc"
+        }
+    }
+}

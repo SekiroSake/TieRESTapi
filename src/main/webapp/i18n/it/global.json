@@ -8,6 +8,7 @@
             "entities": {
                 "main": "Entità",
                 "cbcrEntity": "Cbcr Entity",
+                "cbcrTable1": "Cbcr Table 1",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

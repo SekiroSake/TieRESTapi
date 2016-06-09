@@ -1,0 +1,33 @@
+{
+    "tieEntityApp": {
+        "cbcrTable1" : {
+            "home": {
+                "title": "Cbcr Table 1 S",
+                "createLabel": "Cbcr Table 1 erstellen",
+                "createOrEditLabel": "Cbcr Table 1 erstellen oder bearbeiten",
+                "search": "Suche nach Cbcr Table 1"
+            },
+            "created": "Cbcr Table 1 erstellt mit ID {{ param }}",
+            "updated": "Cbcr Table 1 aktualisiert mit ID {{ param }}",
+            "deleted": "Cbcr Table 1 gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Cbcr Table 1 {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Cbcr Table 1"
+            },
+            "taxJurisdiction": "Tax Jurisdiction",
+            "revenueUnrelatedParty": "Revenue Unrelated Party",
+            "revenueRelatedParty": "Revenue Related Party",
+            "revenueTotal": "Revenue Total",
+            "plBeforeIncomeTax": "Pl Before Income Tax",
+            "incomeTaxPaid": "Income Tax Paid",
+            "incomeTaxAccrued": "Income Tax Accrued",
+            "statedCapital": "Stated Capital",
+            "accumulatedEarnings": "Accumulated Earnings",
+            "numberOfEmployees": "Number Of Employees",
+            "tangibleAssetsNonCash": "Tangible Assets Non Cash",
+            "tieDoc": "Tie Doc"
+        }
+    }
+}
