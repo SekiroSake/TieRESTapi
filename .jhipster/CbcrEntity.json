@@ -1,0 +1,99 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "tieDoc",
+            "otherEntityName": "tieDoc",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "cbcrEntity"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "80"
+        },
+        {
+            "fieldName": "entityCode",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "300"
+        },
+        {
+            "fieldName": "taxIdNum",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "incorpCountryCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "otherEntityInfo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tidNum",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isPermanentEstablishment",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "addrLeagalType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addrFreeText",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addrStreet",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addrBuildingIdentifier",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addSuiteIdentifier",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addrFloorIdentifier",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addrPOB",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addrPostCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addrCity",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addrCountrySubentity",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160609163051",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "cbcr_entity",
+    "pagination": "no"
+}

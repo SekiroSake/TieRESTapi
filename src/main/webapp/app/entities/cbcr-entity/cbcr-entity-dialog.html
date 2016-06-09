@@ -1,0 +1,146 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myCbcrEntityLabel" translate="tieEntityApp.cbcrEntity.home.createOrEditLabel">Create or edit a Cbcr Entity</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.cbcrEntity.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.cbcrEntity.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="vm.cbcrEntity.name"
+                    ng-maxlength="80" />
+            <div ng-show="editForm.name.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.name.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="80">
+                    This field cannot be longer than 80 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.entityCode" for="field_entityCode">Entity Code</label>
+            <input type="text" class="form-control" name="entityCode" id="field_entityCode"
+                    ng-model="vm.cbcrEntity.entityCode"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="vm.cbcrEntity.description"
+                    ng-maxlength="300" />
+            <div ng-show="editForm.description.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.description.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="300">
+                    This field cannot be longer than 300 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.taxIdNum" for="field_taxIdNum">Tax Id Num</label>
+            <input type="text" class="form-control" name="taxIdNum" id="field_taxIdNum"
+                    ng-model="vm.cbcrEntity.taxIdNum"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.incorpCountryCode" for="field_incorpCountryCode">Incorp Country Code</label>
+            <input type="text" class="form-control" name="incorpCountryCode" id="field_incorpCountryCode"
+                    ng-model="vm.cbcrEntity.incorpCountryCode"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.otherEntityInfo" for="field_otherEntityInfo">Other Entity Info</label>
+            <input type="text" class="form-control" name="otherEntityInfo" id="field_otherEntityInfo"
+                    ng-model="vm.cbcrEntity.otherEntityInfo"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.tidNum" for="field_tidNum">Tid Num</label>
+            <input type="text" class="form-control" name="tidNum" id="field_tidNum"
+                    ng-model="vm.cbcrEntity.tidNum"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.isPermanentEstablishment" for="field_isPermanentEstablishment">Is Permanent Establishment</label>
+            <input type="number" class="form-control" name="isPermanentEstablishment" id="field_isPermanentEstablishment"
+                    ng-model="vm.cbcrEntity.isPermanentEstablishment"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.addrLeagalType" for="field_addrLeagalType">Addr Leagal Type</label>
+            <input type="text" class="form-control" name="addrLeagalType" id="field_addrLeagalType"
+                    ng-model="vm.cbcrEntity.addrLeagalType"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.addrFreeText" for="field_addrFreeText">Addr Free Text</label>
+            <input type="text" class="form-control" name="addrFreeText" id="field_addrFreeText"
+                    ng-model="vm.cbcrEntity.addrFreeText"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.addrStreet" for="field_addrStreet">Addr Street</label>
+            <input type="text" class="form-control" name="addrStreet" id="field_addrStreet"
+                    ng-model="vm.cbcrEntity.addrStreet"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.addrBuildingIdentifier" for="field_addrBuildingIdentifier">Addr Building Identifier</label>
+            <input type="text" class="form-control" name="addrBuildingIdentifier" id="field_addrBuildingIdentifier"
+                    ng-model="vm.cbcrEntity.addrBuildingIdentifier"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.addSuiteIdentifier" for="field_addSuiteIdentifier">Add Suite Identifier</label>
+            <input type="text" class="form-control" name="addSuiteIdentifier" id="field_addSuiteIdentifier"
+                    ng-model="vm.cbcrEntity.addSuiteIdentifier"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.addrFloorIdentifier" for="field_addrFloorIdentifier">Addr Floor Identifier</label>
+            <input type="text" class="form-control" name="addrFloorIdentifier" id="field_addrFloorIdentifier"
+                    ng-model="vm.cbcrEntity.addrFloorIdentifier"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.addrPOB" for="field_addrPOB">Addr POB</label>
+            <input type="text" class="form-control" name="addrPOB" id="field_addrPOB"
+                    ng-model="vm.cbcrEntity.addrPOB"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.addrPostCode" for="field_addrPostCode">Addr Post Code</label>
+            <input type="text" class="form-control" name="addrPostCode" id="field_addrPostCode"
+                    ng-model="vm.cbcrEntity.addrPostCode"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.addrCity" for="field_addrCity">Addr City</label>
+            <input type="text" class="form-control" name="addrCity" id="field_addrCity"
+                    ng-model="vm.cbcrEntity.addrCity"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="tieEntityApp.cbcrEntity.addrCountrySubentity" for="field_addrCountrySubentity">Addr Country Subentity</label>
+            <input type="text" class="form-control" name="addrCountrySubentity" id="field_addrCountrySubentity"
+                    ng-model="vm.cbcrEntity.addrCountrySubentity"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

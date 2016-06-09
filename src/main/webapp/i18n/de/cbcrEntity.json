@@ -1,0 +1,40 @@
+{
+    "tieEntityApp": {
+        "cbcrEntity" : {
+            "home": {
+                "title": "Cbcr Entities",
+                "createLabel": "Cbcr Entity erstellen",
+                "createOrEditLabel": "Cbcr Entity erstellen oder bearbeiten",
+                "search": "Suche nach Cbcr Entity"
+            },
+            "created": "Cbcr Entity erstellt mit ID {{ param }}",
+            "updated": "Cbcr Entity aktualisiert mit ID {{ param }}",
+            "deleted": "Cbcr Entity gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Cbcr Entity {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Cbcr Entity"
+            },
+            "name": "Name",
+            "entityCode": "Entity Code",
+            "description": "Description",
+            "taxIdNum": "Tax Id Num",
+            "incorpCountryCode": "Incorp Country Code",
+            "otherEntityInfo": "Other Entity Info",
+            "tidNum": "Tid Num",
+            "isPermanentEstablishment": "Is Permanent Establishment",
+            "addrLeagalType": "Addr Leagal Type",
+            "addrFreeText": "Addr Free Text",
+            "addrStreet": "Addr Street",
+            "addrBuildingIdentifier": "Addr Building Identifier",
+            "addSuiteIdentifier": "Add Suite Identifier",
+            "addrFloorIdentifier": "Addr Floor Identifier",
+            "addrPOB": "Addr POB",
+            "addrPostCode": "Addr Post Code",
+            "addrCity": "Addr City",
+            "addrCountrySubentity": "Addr Country Subentity",
+            "tieDoc": "Tie Doc"
+        }
+    }
+}

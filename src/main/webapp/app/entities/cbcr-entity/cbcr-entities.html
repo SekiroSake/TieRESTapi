@@ -1,0 +1,107 @@
+<div>
+    <h2 translate="tieEntityApp.cbcrEntity.home.title">Cbcr Entities</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="cbcr-entity.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span class="hidden-xs"  translate="tieEntityApp.cbcrEntity.home.createLabel">
+                        Create new Cbcr Entity
+                    </span>
+                </button>
+            </div>
+            <div class="col-xs-8 no-padding-right">
+                <form name="searchForm" class="form-inline">
+                    <div class="input-group pull-right" >
+                        <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="{{ 'tieEntityApp.cbcrEntity.home.search' | translate }}">
+                        <span  class="input-group-btn width-min" >
+                            <button class="btn btn-info" ng-click="vm.search(vm.searchQuery)">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                        <span class="input-group-btn width-min" ng-if="vm.currentSearch">
+                            <button class="btn btn-info" ng-click="vm.clear()">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.name">Name</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.entityCode">Entity Code</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.description">Description</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.taxIdNum">Tax Id Num</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.incorpCountryCode">Incorp Country Code</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.otherEntityInfo">Other Entity Info</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.tidNum">Tid Num</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.isPermanentEstablishment">Is Permanent Establishment</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.addrLeagalType">Addr Leagal Type</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.addrFreeText">Addr Free Text</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.addrStreet">Addr Street</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.addrBuildingIdentifier">Addr Building Identifier</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.addSuiteIdentifier">Add Suite Identifier</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.addrFloorIdentifier">Addr Floor Identifier</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.addrPOB">Addr POB</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.addrPostCode">Addr Post Code</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.addrCity">Addr City</span></th>
+                    <th><span translate="tieEntityApp.cbcrEntity.addrCountrySubentity">Addr Country Subentity</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="cbcrEntity in vm.cbcrEntities track by cbcrEntity.id">
+                    <td><a ui-sref="cbcr-entity-detail({id:cbcrEntity.id})">{{cbcrEntity.id}}</a></td>
+                    <td>{{cbcrEntity.name}}</td>
+                    <td>{{cbcrEntity.entityCode}}</td>
+                    <td>{{cbcrEntity.description}}</td>
+                    <td>{{cbcrEntity.taxIdNum}}</td>
+                    <td>{{cbcrEntity.incorpCountryCode}}</td>
+                    <td>{{cbcrEntity.otherEntityInfo}}</td>
+                    <td>{{cbcrEntity.tidNum}}</td>
+                    <td>{{cbcrEntity.isPermanentEstablishment}}</td>
+                    <td>{{cbcrEntity.addrLeagalType}}</td>
+                    <td>{{cbcrEntity.addrFreeText}}</td>
+                    <td>{{cbcrEntity.addrStreet}}</td>
+                    <td>{{cbcrEntity.addrBuildingIdentifier}}</td>
+                    <td>{{cbcrEntity.addSuiteIdentifier}}</td>
+                    <td>{{cbcrEntity.addrFloorIdentifier}}</td>
+                    <td>{{cbcrEntity.addrPOB}}</td>
+                    <td>{{cbcrEntity.addrPostCode}}</td>
+                    <td>{{cbcrEntity.addrCity}}</td>
+                    <td>{{cbcrEntity.addrCountrySubentity}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="cbcr-entity-detail({id:cbcrEntity.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="cbcr-entity.edit({id:cbcrEntity.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="cbcr-entity.delete({id:cbcrEntity.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
